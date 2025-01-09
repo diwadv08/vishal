@@ -25,8 +25,10 @@
 function SubmitFn(){
     let name=document.querySelector("#name").value;
     let pwd=document.querySelector("#pwd").value;
+    let error=document.querySelector("p")
     if(name!="admin" || pwd!='123'){
-        alert("Invalid Login")
+        error.innerHTML='Invalid Login';
+        error.style.color='red';
         return false;
     }
 }
