@@ -4,27 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .fa{
+            position:relative;
+            left:-26px;
+            font-size:13px;
+        }
+    </style>
 </head>
-<style>
-    button{
-        border:none;
-        padding:8px 30px;
-        background:blue;
-        color:white;
-    }
-</style>
 <body>
-    <h1>Hello</h1>
-    <div id="myDiv">
-        hello
-    </div>
-    <button onclick="Fun(this)">Login</button>
-    <!-- <h1 onclick="console.log(this)">Hello</h1>
-    <h1 onclick="console.log(this.id)" id="Bye">Hello</h1>
-    <h1 onclick="console.log(this.className)" class="Hello">Hello</h1>
-    <h1 onclick="console.log(this.tagName)" class="Hi">Hello</h1>
-    <a href="www" onclick="console.log(this.href)">Click</a> -->
-     <!-- <input type="text" placeholder="Enter" onclick="console.log(this.placeholder)" > -->
+    <!-- <button onclick="Mode(this)">Dark</button> -->
+<!-- 
+    <input type="password" id="pwd">
+    <i class="fa fa-eye" onclick="Change(this)"></i> -->
+
+    <form action="Welcome.html" onsubmit="return SubmitFn()">
+        <input type="text" id="name" placeholder="Name">
+        <input type="text" id="pwd" placeholder="Pwd">
+        <input type="submit">
+    </form>
 </body>
 </html>
-<script src="js/dom.js"></script>
+<script src="js/dom2.js"></script>
