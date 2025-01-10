@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color:red;
+        }
+        p::before{
+            content:'*';
+        }
+        #submit{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Password Check -->
+    <input type="text" onkeyup="PasswordChecker(this)" placeholder="Password">
+    <input type="submit" id="submit">
+    <p>First letter should be capital</p>
+    <p>Atleast 7 characters</p>
+    <p>Atleast 1 special characters</p>
+    <p>Atleast 1 Number</p>
+</body>
+</html>
+<script src="js/dom3.js"></script>
