@@ -1,6 +1,5 @@
 let table_datas=document.querySelector(".table_datas");
 
-let table_records='';
 
 const table_data=[
     {
@@ -28,9 +27,21 @@ const table_data=[
         email:'Varun@gmail.com'
     },
 ];
-
+let table_records=`<table width='100%'><tr align='left'>`;
 let thead=Object.keys(table_data[0]);
-console.log(thead);
+thead.map((e)=>{
+    table_records+=`<th>${e.toUpperCase()}</th>`;
+})
+table_records+=`</tr>`
+table_data.map((e)=>{
+    table_records+=`<tr>
+            <td>${e.id}</td>
+            <td>${e.name}</td>
+            <td>${e.mobile}</td>
+            <td>${e.email}</td>
+        </tr>`
+})
 
 
 table_datas.innerHTML=table_records;
+
